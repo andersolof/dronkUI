@@ -12,7 +12,7 @@ body {
 }
 
 /*img {
-	
+
 }
 
 .logo {
@@ -22,13 +22,14 @@ body {
 
 #sliders-total {
 	position: fixed;
-	top: 30px;
+	top: 0px;
 	right: 0px;
 	font-size: 24px;
 	text-align: center;
 	color: #0000bb;
 	background: #ffffff;
-	padding: 0px 20px 0px 20px; 
+	width: 100%;
+	z-index: 100;
 }
 
 .sliders {
