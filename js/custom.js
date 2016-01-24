@@ -9,7 +9,7 @@ $(function(){
 	function makeCode () {		
 		//console.log(slider0Val);
 		//var elText = document.getElementById("text");
-		qrcode.makeCode("pump:0:"+slider0Val+",1:"+slider1Val+",2:"+slider2Val+",3:"+slider3Val+",4:"+slider4Val+",5:"+slider5Val+",6:"+slider6Val);
+		qrcode.makeCode("["+[slider0Val, slider1Val, slider2Val, slider3Val, slider4Val, slider5Val, slider6Val].join(',')+"],15");
 	}
 	function countCL(){
 		$("#sliders-total").text(Math.round(Number(slider0Val)/10000)+Math.round((Number(slider1Val)/85714)*10)+Math.round((Number(slider2Val)/75000)*10)+Math.round((Number(slider3Val)/80000)*10)+Math.round((Number(slider4Val)/85714)*10)+Math.round((Number(slider5Val)/85714)*10)+Math.round((Number(slider6Val)/85714)*10)+" cl");
